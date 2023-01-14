@@ -1,0 +1,197 @@
+/* Fumdamental style for all 3 pages, including Header and Footer */
+
+@font-face {
+    font-family: 'Bismarck';
+    src: url('Bismarck.ttf') format('truetype');
+}
+
+
+h1, h2, .Menu {
+	font-family: "Times New Roman", Times, serif;
+}
+
+body {
+
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0% 5%;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+header {
+    display: grid;
+	grid-template-columns: auto auto;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+    background-color: #ac0010;
+    color:white;
+    padding: 20px;
+  }
+  
+  header div:first-of-type {
+    grid-row-start: 1;
+  	grid-row-end: 1;
+  	grid-column-start: 1;
+  	grid-column-end: 1;
+  }
+  
+  header div:nth-of-type(2) {
+    grid-row-start: 2;
+  	grid-row-end: 2;
+  	grid-column-start: 1;
+  	grid-column-end: 1;
+  }
+  
+  header nav {
+    grid-row-start: 2;
+  	grid-row-end: 2;
+  	grid-column-start: 2;
+  	grid-column-end: 2;
+  	text-align: right;
+  }
+
+  #Logo img {
+	float: left;
+	height: 150px;
+}
+
+#Logo h1 {
+	line-height: 125px;
+	margin: 0 20px;
+	display: inline-block;
+	color: #ffffff;
+    font-family: 'Bismarck';
+    font-size: 50px;
+}
+
+a.MenuItem {
+    line-height: 125px;
+	font-size: 30px;
+	margin: 10px;
+	color: #ffffff;
+}
+
+footer {
+	background-color: #ff7300;
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+.FooterMenu{
+	width: 15%;
+	display: inline-block;
+	vertical-align: text-top;
+	list-style-type: none;
+	line-height: 2;
+}
+
+/*Homepage CSS*/
+
+#Welcome {
+    padding: 20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    font-family: 'yourShirt';
+    font-style: normal;
+    font-size: 30px;
+}
+
+#Description {
+	padding-top: 300px;
+	color: #ac0010
+
+}
+
+#intro{
+	color: black;
+    font-size: 25px;
+}
+
+a.SeeMore{
+	color:#0026ff
+}
+
+#PromotionalOffer{
+	text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+    background-color:#ac0010;
+    font-weight: bold;
+}
+
+#PromotionalOffer a{
+	color: rgb(255, 255, 255);
+}
+
+#IceSkate{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: center;
+	font-size: 20px;
+}
+
+/*Tickets CSS*/
+
+#UpcomingActivities{
+	margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #ddd;
+  }
+  
+  th, td {
+	text-align: left;
+	padding: 16px;
+  }
+
+  .button {
+	background-color: #ffffff;
+	border: 2px solid #ac0010;
+	color: #ac0010;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	padding: 16px 32px;
+	margin-top: 16px;
+	cursor: pointer;
+
+  }
+	  
+  .button:hover {
+	  background-color: #ac0010;
+	  color: #ffffff;
+  }
+  
+
+/*Rides and Attraction CSS*/
+
+#AttractionAndEntertainment {
+	text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+    margin: 40px 0 120px 0;
+}
+
+#AttractionAndEntertainment h2 {
+    grid-column: 1 / span 3;
+}
+
+#AttractionAndEntertainment .Attractions img {
+    width: 100%;
+    height: 350px;
+}
